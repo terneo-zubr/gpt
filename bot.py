@@ -6,8 +6,8 @@ import openai
 TELEGRAM_TOKEN = "7625632118:AAEHZjesJZ64vQ6fQJlsmnXZJg72z5hERrc"
 OPENAI_API_KEY = "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"
 
-bot = telebot.TeleBot(TELEGRAM_TOKEN)
-openai.api_key = OPENAI_API_KEY
+bot = telebot.TeleBot("{625632118:AAEHZjesJZ64vQ6fQJlsmnXZJg72z5hERrc")
+openai.api_key = "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"
 
 @bot.message_handler(func=lambda message: True)
 def chat_with_gpt(message):
